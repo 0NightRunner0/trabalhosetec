@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+    --branco: #ffffff;
+    --ciano: #00BFFF;
+    --cinza: #4F4F4F;
+    --vermelho: #FF0000;
+    --laranja: #FF8C00;
+    --verde: #7CFC00;
+    --preto: #000;
+    --azulquasecinza: #B0C4DE;
+    --prata:#C0C0C0;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    height: 80px;
+    background-color: var(--azulquasecinza);
+    color: var(--preto);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid var(--preto);
+}
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#titulo i {
+    font-size: 30px;
+}
+
+#titulo p {
+    font-size: 26px;
+}
+
+#esportes nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#esportes nav a {
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 17px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+#esportes nav a:hover {
+    border-top: 3px solid var(--preto);
+    border-bottom: 3px solid var(--preto);
+}
+
+#canais nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#canais nav a {
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 17px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+#canais nav a:hover {
+    border-top: 3px solid var(--preto);
+    border-bottom: 3px solid var(--preto);
+}
+
+
+#login button {
+    width: 100px;
+    height: 30px;
+    background-color: var(--branco);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#login button:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline var(--preto);
+}
+#apresentacao h1 {
+    font-family: "audiowide";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px var(--cinza);
+    margin-bottom: 40px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#imagem img {
+    width: 300px;
+    transition: all 1s ease;
+}
+
+#imagem img:hover {
+    scale: 1.3;
+    transform:translateY(-20px) translateX(-20px);
+    filter: saturate(2);
+}
+
+#txt p {
+    font-size: 23px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+#txt p:hover {
+    transform: translateY(-10px);
+    font-weight: 700;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    padding: 20px 30px;
+    border-top: 2px solid var(--prata) ;
+}
+
+
+.cards h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-shadow: 5px 5px 5px var(--cinza);
+    text-decoration: underline var(--preto);
+}
+
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    border: 3px solid var(--preto);
+    box-shadow: 5px 5px 5px var(--cinza);
+    width: 15%;
+    height: 500px;
+    opacity: 0.3;
+    background-color: var(--branco);
+    transition: all 0.5s ease; 
+}
+
+.card:hover {
+    opacity: 1;
+    transform: translateY(-20px);
+    box-shadow: 3px 3px 3px var(--cinza);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+.card img:hover {
+    filter: saturate(2);
+}
+
+.card-info {
+    margin: 20px 10px;
+}
+
+.card h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20;
+}
+
+.card p{
+    height: 100px;
+    font-size: 14px;
+}
+
+.card-button{
+    display: flex;
+    justify-content: center;
+}
+
+.card-button button{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--branco);
+    border: 2px solid var(--preto);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.card-button button:hover{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+footer{
+    background-color:var(--azulquasecinza) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    color:var(--preto);
+}
+
+#desenvolvedor{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+#desenvolvedor .txt-dev{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+#desenvolvedor .txt-dev:hover{
+    color: var(--branco);
+    scale: 1.1;
+}
+
+#desenvolvedor .lgnd-dev{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: all .5s ease;
+}
+
+#desenvolvedor .lgnd-dev:hover{
+    color: var(--branco);
+    scale: 1.1;
+}
+
+.texto {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+}
+
+.texto:hover {
+    color: var(--branco);
+    scale: 1.1;
+}
+
+.legenda{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 140px;
+    flex-direction: row;
+    gap: 16px; 
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: 0.5s ease;
+}
+
+
+
+.legenda:hover{
+    color: #FFFFFF;
+    scale: 1.1;
+}
+
+#redes-socias #contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icone {
+    color: var(--preto);
+    font-size: 40px;
+}
+
+.footer-icone:hover {
+    transition: all 0.5s ease;
+    scale: 1.2;
+    color: var(--branco);
+}
+
+#chat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#chat .texto{
+    margin-top: 40px;
+}
+#chat nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;/* 1rem*/
+}
+#chat a{
+    text-decoration: none;
+    color:var(--preto);
+    transition: 0.5s all ease ;
+}
+#chat a:hover{
+    color:var(--branco);
+
+}
